@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Compiled and minified CSS  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="form align-center">
+                        <form action="SellerLoginServlet" method="post" id="myform" enctype="multipart/form-data">
+                            <input type="text" placeholder="Name" name="username">
+                            <input type="email" placeholder="Email" name="useremail">
+                            <input type="password" placeholder="Password" name="password">
+                            <input type="text" placeholder="Product Name" name="productname">
+                            <input type="number" placeholder="Product Price" name="productprice">
+                            <textarea class="materialize-textarea" placeholder="Product Description" name="productdescription"></textarea>
+
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>Product Image</span>
+                                    <input type="file" name='imagename'>
+                                </div>
+                                <div class="file-path-wrapper ">
+                                    <input class="file-path validate">
+                                </div>
+                            </div>
+
+                            <button class="btn green" style="margin-left: 40%;margin-bottom:15px">Submit</button>
+                        </form>
+
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <!--jquery CDN-->
+    <script
+
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous">
+    </script>
+    <script>
+//        $(document).ready(function () {
+//            console.log("CDN is ready ")
+//        });
+//        
+//        $("#myform").on('submit', function(event){
+//            event.preventDefault();
+//                        
+//        });
+            
+//            var f = $(this).serialize();
+//            // to send image through form we need FormData
+////            let f = new FormData(this);
+//            
+//            //print the value of f
+//            //here f means the all the data that we are sending through the form
+//            console.log(f);
+//            
+//            //now apply the ajax function on this f;
+//            // NOTE : ajax function takes an object which must include the URL of the servlet
+//            // type and data 
+//            $.ajax({
+//                //address of the servelt or the value of action in form
+//                url : "SellerLoginServlet",             
+//                data : f,
+//                type : 'POST',
+//                success : function(data,textStatus, jqXHR){
+//                    console.log(data);
+//                    console.log("sucess");
+//                },
+//                error : function(jqXHR, textStatus, errorThrown ){
+////                    console.log(data);
+//                    console.log("failure");
+//                },
+//                processData : false,
+//                contentType : false
+                
+
+
+    </script>
+</html>
